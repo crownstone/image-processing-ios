@@ -10,6 +10,8 @@
 		FAB3AA492170C492001A6DD7 /* image_processing_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB3AA3F2170C492001A6DD7 /* image_processing_ios.framework */; };
 		FAB3AA4E2170C492001A6DD7 /* image_processing_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB3AA4D2170C492001A6DD7 /* image_processing_iosTests.swift */; };
 		FAB3AA502170C492001A6DD7 /* image_processing_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB3AA422170C492001A6DD7 /* image_processing_ios.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAB3AA5A2170C976001A6DD7 /* ImageProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB3AA592170C976001A6DD7 /* ImageProcessing.swift */; };
+		FAB3AA5C2170CA24001A6DD7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FAB3AA5B2170CA24001A6DD7 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		FAB3AA482170C492001A6DD7 /* image-processing-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "image-processing-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB3AA4D2170C492001A6DD7 /* image_processing_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = image_processing_iosTests.swift; sourceTree = "<group>"; };
 		FAB3AA4F2170C492001A6DD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB3AA592170C976001A6DD7 /* ImageProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessing.swift; sourceTree = "<group>"; };
+		FAB3AA5B2170CA24001A6DD7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				FAB3AA422170C492001A6DD7 /* image_processing_ios.h */,
+				FAB3AA592170C976001A6DD7 /* ImageProcessing.swift */,
+				FAB3AA5B2170CA24001A6DD7 /* README.md */,
 				FAB3AA432170C492001A6DD7 /* Info.plist */,
 			);
 			path = "image-processing-ios";
@@ -148,6 +154,7 @@
 				TargetAttributes = {
 					FAB3AA3E2170C492001A6DD7 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					FAB3AA472170C492001A6DD7 = {
 						CreatedOnToolsVersion = 10.0;
@@ -177,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB3AA5C2170CA24001A6DD7 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB3AA5A2170C976001A6DD7 /* ImageProcessing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +350,7 @@
 		FAB3AA542170C492001A6DD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.crownstone.image-processing-ios";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +376,7 @@
 		FAB3AA552170C492001A6DD7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +401,7 @@
 		FAB3AA572170C492001A6DD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "image-processing-iosTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +419,7 @@
 		FAB3AA582170C492001A6DD7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "image-processing-iosTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
